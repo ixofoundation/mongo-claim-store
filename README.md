@@ -7,7 +7,7 @@ Install node modules
 
 ```npm install```
 
-Run Docker (Prerequisite: Docker installed see (Install Docker)[https://docs.docker.com/engine/installation/])
+Run Docker (Prerequisite: Docker installed see [Install Docker](https://docs.docker.com/engine/installation/))
 
 ```docker-compose up```
 
