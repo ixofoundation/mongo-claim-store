@@ -1,6 +1,6 @@
 # Claim Store
 
-Runs a small microservice in docker to store claim data and returns a uri to that claim data so that it can be retrieved.  Claim data cannot be deleted or updated. 
+Runs a small microservice in docker to store claim data and returns a link to that claim data so that it can be retrieved later.  Claim data cannot be deleted or updated. 
 
 ## Setup
 Install node modules
