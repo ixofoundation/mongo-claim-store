@@ -3,17 +3,34 @@
 Runs a small microservice in docker to store claim data and returns a uri to that claim data so that it can be retrieved.  Claim data cannot be deleted or updated. 
 
 ## Setup
-Run to install node modules
+Install node modules
+
 ```npm install```
-Run the following to run docker services
+
+Run Docker (Prerequisite: Docker installed see (Install Docker)[https://docs.docker.com/engine/installation/])
+
 ```docker-compose up```
 
 ## API
-The are two calls in the API. 
-To create a claim:
+The are two calls in the API.
+
+To create a claim POST:
+
 ```http://localhost:3000/claims/create```
-To retrieve it (d is the id returned in the create call):
-```httpL//localhost:3000/claims/:id```
+
+Body (where claim is a claim in JSON format):
+
+```
+{
+	"owner": "did:3de478ac6853efa2d58bcac",
+	"claim": {....}
+}
+```
+
+To retrieve it use this GET call (d is the id returned in the create call):
+
+```http://localhost:3000/claims/:id```
+
 
 ## TODO
 * Return address as IPLD link
